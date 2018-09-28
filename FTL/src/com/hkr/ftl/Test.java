@@ -32,6 +32,7 @@ public class Test {
 		latest.setName("Amazon Echo");
 		latest.setUrl("https://www.amazon.com/all-new-amazon-echo-speaker-with-wifi-alexa-dark-charcoal/dp/B06XCM9LJ4");
 		root.put("latestProduct", latest);
+		root.put("max", new MaxMethod());
 
 		/* Get the TEMPLATE */
 		Template template = cfg.getTemplate("testTemplate.ftlh");
